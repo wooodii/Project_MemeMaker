@@ -1,0 +1,133 @@
+/* resetcss불러오기 */
+@import "reset.css";
+@font-face {
+    font-family: 'OKCHAN';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKCHAN.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+body{
+    display :flex; 
+    gap :20px; 
+    justify-content:space-between;
+    align-items : flex-start;
+    background-color: gainsboro;
+    padding:20px 20px;
+}
+
+/* 캔버스와 웹페이지 크기 설정 */
+canvas {
+    width:800px;
+    height:800px;
+    background-color: white;
+}
+
+body {
+    display:flex; 
+    justify-content:center;
+    align-items :center;
+}
+
+#title {
+    display : block;
+    font-family : 'OKCHAN';
+    font-size : 40px;
+    padding-bottom : 20px;
+}
+
+
+#color{
+    width : 140px;
+    height :35px;
+}
+
+/* 3) color option판 사이즈 조절 */
+.color-options {
+    display: block;
+    width : 250px;
+    height: 650px;
+    flex-direction:row;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.color-option{
+    overflow:hidden;
+    display: inline-block;
+    width:50px;
+    height:50px;
+    margin : 10px 0 0 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    border:5px solid white; 
+    transition:transform ease-in-out 1s;
+}
+
+.color-option-title {
+    display:block; 
+    height:50px; 
+    margin : 30px 0 0 15px;
+    font-size : 20px;
+    font-family: 'OKCHAN';
+}
+
+.color-option:hover{
+    transform :scale(1.2);
+}
+
+.btns{
+    font-family: 'MICEGothic Bold';
+    display:flex; 
+    flex-direction: column;
+    cursor:pointer;
+    align-items: center;
+    padding: 10px;
+}
+
+input #color{
+    background-color: white ;
+}
+
+label {
+    all:unset;
+    display: inline-block;
+    padding:10px 0px;
+    text-align: center;
+    width : 230px;
+    color:black;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+button {
+    all:unset;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+input#file {
+    display: none;
+}
+
+input#text {
+    all:unset;
+    padding:10px 0px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+    height:20px;
+}

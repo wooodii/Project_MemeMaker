@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./fefe.ico">
+    <title> Meme Maker </title>
+</head>
+<body>
+    <div class="color-options">
+        <div class="color-option-title"> 🩸 Color picker 🩸 </div>
+        <!-- <div><button> &lt; </button><button> &gt; </button> </div>  -->
+        <div class="color-option" style="background-color: #522e5a;;" data-color="#522e5a;"></div> 
+        <div class="color-option" style="background-color: #7b3763;" data-color="#7b3763"></div> 
+        <div class="color-option" style="background-color: #b4496f;" data-color="#b4496f"></div>
+        <div class="color-option" style="background-color: #fd6d7a;" data-color="#fd6d7a"></div> 
+        <div class="color-option" style="background-color: #ffa880;" data-color="#ffa880"></div> 
+        <div class="color-option" style="background-color: #f1c40f;" data-color="#f1c40f"></div> 
+        <div class="color-option" style="background-color: #522945;" data-color="#522945"></div> 
+        <div class="color-option" style="background-color: #763a5b;" data-color="#763a5b"></div> 
+        <div class="color-option" style="background-color: #af567c;" data-color="#af567c"></div>
+        <div class="color-option" style="background-color: #f17fa1;" data-color="#f17fa1"></div> 
+        <div class="color-option" style="background-color: #f6abc1;" data-color="#f6abc1"></div> 
+        <div class="color-option" style="background-color: #e67e22;" data-color="#e67e22"></div> 
+        <div class="color-option" style="background-color: #f1c40f;" data-color="#f1c40f"></div> 
+        <div class="color-option" style="background-color: #522945;" data-color="#522945"></div> 
+        <div class="color-option" style="background-color: #763a5b;" data-color="#763a5b"></div> 
+        <div class="color-option" style="background-color: #af567c;" data-color="#af567c"></div>
+        <div class="color-option" style="background-color: #f17fa1;" data-color="#f17fa1"></div> 
+        <div class="color-option" style="background-color: #f6abc1;" data-color="#f6abc1"></div> 
+    </div>
+    <canvas></canvas>
+    
+    <!-- 색상 선택 -->
+    <div class="btns">
+        <div id="title">
+            <h3>Meme Maker </h3>
+        </div>
+        <label id="colorbox" for="color"> 색상선택 / 현재색상 <br> <input type="color" name="" id="color" style="margin-top: 5px;"/> </label>
+        <label id="rangebox" for="line-width"> 굵기 조절 ( 1 ~ 10 ) <br> <input id="line-width" type="range" min="1" max="10" value="5" step="1"></label>
+        <label for="mode-btn"> <button id="mode-btn"> 채우기 </button></label>
+        <label for="destory-btn"> <button id="destory-btn"> 초기화 </button></label>
+        <label for="eraser-btn"> <button id="eraser-btn"> 지우기 </button></label>
+        <label for="file"> 이미지 추가 
+            <input id="file" type="file" accrpt="image/*">
+        </label>
+        <label for="text"> <input id="text" type="text" placeholder="Write and double click"> </label>
+        <label for="save"> <button id="save"> 이미지 저장 </button></label>
+    </div>
+    <script src="./drawline.js"></script>
+</body>
+</html>
